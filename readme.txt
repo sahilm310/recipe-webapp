@@ -20,3 +20,10 @@ I believe i have completed all requirements, the users can only update and delet
 15. There is a way to logout - route/main.js - ln136
 16. There is a basic api i.e. recipes content can be accessed as json via http method, It should be clear how to access the api (this could include comments in code) - route/main.js - ln342
 17. There are links on all pages to home page providing easy navigation for users - views/index.html, register.html, login.html, addrecipe.html, list.ejs, update.ejs, delete.ejs …….etc. - ln12(roughly for all) 
+
+
+Database = recipebank
+collection = recipes =>  | name      | time     | difficulty | ingredients | method   | publisher | userAuth* |
+collection = users =>    | firstname | lastname | email      | username*   | password |
+recipes.userAuth = users.username
+// used this for the update/delete access
