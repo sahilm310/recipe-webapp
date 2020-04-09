@@ -1,5 +1,7 @@
 I believe i have completed all requirements, the users can only update and delete their own recipes, done this through req.session.userId
-
+in add recipe, the name has to be entered to continue
+i used 1 message.ejs file and passed through different messages, this way the main.js will be clearer and i can style response pages like the rest of the webapp
+searching by keyword gives all recipes with the keyword in the name, not just the first result
 
 
 #requirements 
