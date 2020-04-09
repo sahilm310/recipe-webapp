@@ -1,0 +1,85 @@
+body {
+    background: url(https://www.doc.gold.ac.uk/~smiah008/images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #26547C;
+    font-family:'Exo 2', sans-serif;
+    text-align: center;
+    margin: 20 0 0 0;
+    padding: 0;
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size:35px; 
+    font-weight:bold;
+}
+a {
+    color: #038cfc;
+    font-size: 20px;
+    margin: 10px;
+    padding-top:10px;
+}
+a:hover {
+    color: #2d3aed;
+    text-shadow: 2px 2px 12px #bfbfbf;
+}
+.links {
+    margin: 30 0 30 0;
+    padding: 15px;
+    background-color: rgba(255, 209, 102,0.3);
+}
+
+.links a{
+    opacity: 1.0;
+}
+.forms{
+    position: absolute;
+    margin: 50px;
+    padding: 50px;
+    width: 550px;
+    background-color: rgba(255, 209, 102,0.5);
+    color: #26547C;
+}
+.forms input, textarea, select{
+    margin:10px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    width: 280px
+}
+.forms p1, p{
+    font-family: 'Cookie', cursive;
+    font-size: 2.3em;
+}
+.forms .passBtn{
+    width:10px;
+}
+.forms .togglePass{
+    padding: 0 150 0 0;
+}
+.aRight{text-align: right; }
+.image{text-align: right;}
+.container{padding: 0px 70px 0px 70px}
+
+.results{
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Cookie', cursive;
+    font-size: 2.3em;
+}
+.results table{
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+.recipes td{
+    padding: 15px;
+    vertical-align: top;
+}
+
+.recipes{
+    margin: 0 0 80 0;
+    background-color: rgba(255, 209, 102,0.5);
+}
+

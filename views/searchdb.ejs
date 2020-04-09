@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Search Results!</title>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Recipe Bank</h1>
+        <div class="links">
+            <a href='./'>Home</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href='/register'>Register</a>
+            &nbsp;&nbsp;<a href='/login'>Login</a>
+            &nbsp;&nbsp;<a href='/addrecipe'>Add Recipes</a>
+            &nbsp;&nbsp;<a href="/recipes">Recipe List</a>
+            &nbsp;&nbsp;<a href='/search'>Search</a>
+            &nbsp;&nbsp;<a href='/update'>Update</a>
+            &nbsp;&nbsp;<a href='/delete'>Delete</a>
+            &nbsp;&nbsp;<a href='/api'>Api</a>
+            &nbsp;&nbsp;<a href='/logout'>Logout</a>
+        </div>
+        <div class="container">
+            <h2>Recipe search results</h2>
+            <h3>You can see all matching recipes below:</h3>
+
+            <div class="results" id="listResult">
+                <% searchKW.forEach(function(recipe){ %>
+                    <div class="recipes">
+                        <table>
+                            <tr>
+                                <td>Name: </td>
+                                <td> <%= recipe.name %> </td>
+                            </tr>
+                            <tr>
+                                <td>Time: </td>
+                                <td> <%= recipe.time %> </td>
+                            </tr>
+                            <tr>
+                                <td>Difficulty: </td>
+                                <td> <%= recipe.difficulty %> </td>
+                            </tr>
+
+                            <tr>
+                                <td>Ingredients:</td>
+                                <td> <%= recipe.ingredients %> </td>
+                            </tr>
+  
+                            <tr>
+                                <td>Method: </td>
+                                <td> <%= recipe.method %> </td>
+                            </tr>
+
+                            <tr>
+                                <td>Publisher: </td>
+                                <td> <%= recipe.publisher %> </td>
+                            </tr>
+                        </table>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+        <a href='/search' style='font-size: 15px;'>Return</a>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Recipe Bank</h1>
+        <div class="links">
+            <a href='./'>Home</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href='/register'>Register</a>
+            &nbsp;&nbsp;<a>Login</a>
+            &nbsp;&nbsp;<a href='/addrecipe'>Add Recipes</a>
+            &nbsp;&nbsp;<a href='/recipes'>Recipe List</a>
+            &nbsp;&nbsp;<a href='/search'>Search</a>
+            &nbsp;&nbsp;<a href='/update'>Update</a>
+            &nbsp;&nbsp;<a href='/delete'>Delete</a>
+            &nbsp;&nbsp;<a href='/api'>Api</a>
+            &nbsp;&nbsp;<a href='/logout'>Logout</a>
+        </div>
+        <div class="container">
+            <h2>Login Page</h2>
+            <div class="forms">
+                <p1>Login below</p1>
+                <br><br><br>
+                <form method="POST" action="/loggedin">
+                    <div class="aRight">
+                        
+                        Username: <input id="username" type="text" name="username" placeholder="username" />
+                        <br>
+                        Password: <input id="password" type="password" name="password" placeholder="password" />
+                        <br>
+                        <div class="togglePass">
+                            <input class="passBtn" type="checkbox" onclick="togglePassword()">Show Password
+                        </div>
+                        <br>
+                        <a style="font-size: 10px ">Forgot password?</a>
+                        <br><br>
+                        <input type="submit" value="Login" />
+                    </div>
+                </form>
+            </div>
+        </div>    
+    </body>
+    <script>
+        function togglePassword() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } 
+            else {
+                x.type = "password";
+            }
+        }
+    </script>    
+</html>
+

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Add Recipe</title>
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+        <link  href="/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h1>Recipe Bank</h1>
+        <div class="links">
+            <a href='./'>Home</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href='/register'>Register</a>
+            &nbsp;&nbsp;<a href='/login'>Login</a>
+            &nbsp;&nbsp;<a>Add Recipes</a>
+            &nbsp;&nbsp;<a href='/recipes'>Recipe List</a>
+            &nbsp;&nbsp;<a href='/search'>Search</a>
+            &nbsp;&nbsp;<a href='/update'>Update</a>
+            &nbsp;&nbsp;<a href='/delete'>Delete</a>
+            &nbsp;&nbsp;<a href='/api'>Api</a>
+            &nbsp;&nbsp;<a href='/logout'>Logout</a>
+        </div>
+        <h2>Add a new recipe</h2>
+        <div class="container">
+            <div class="forms">
+                <p>Please fill out <strong>all</strong> fields to add your recipe to the database</p>
+                <br><br>
+                <form method="POST" action="/recipeadded">
+                    <div class="aRight">
+                        Name: <input class="input" id="name" type="text" name="name" placeholder="Recipe Name"><br>
+                        Time: <input class="input" id="time" type="text" name="time" placeholder="Time Taken"><br>
+                        Difficulty: <select class="input" id="difficulty" name="difficulty">
+                            <option value="easy"selected>Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                        <br>
+                        <label for="ingredients" style="vertical-align: top">Ingredients: </label> 
+                        <textarea class="input" id="ingredients" name="ingredients" rows="10" cols="30" placeholder="Enter ingredients here"></textarea>
+                        <br>
+                        <label for="method" style="vertical-align: top">Method: </label>
+                        <textarea class="input" id="method" name="method" rows="10" cols="30" placeholder="Enter method here"></textarea>
+                        <br>
+                        Publisher: <input class="input" id="publisher" type="text" name="publisher" placeholder="Enter your name">
+                        <br>
+                        <input type="submit" value="Submit" >
+                       
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

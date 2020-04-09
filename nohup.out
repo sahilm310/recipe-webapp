@@ -1,0 +1,51 @@
+Example app listening on port 8000!
+Example app listening on port 8000!
+Connected to database
+Example app listening on port 8000!
+Connected to database
+events.js:186
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:426:8)
+    at Protocol.emit (events.js:209:13)
+    at Protocol._delegateError (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}
+Example app listening on port 8000!
+Connected to database
+events.js:186
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Connection lost: The server closed the connection.
+    at Protocol.end (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:112:13)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:525:10)
+    at Socket.emit (events.js:214:15)
+    at endReadableNT (_stream_readable.js:1178:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+Emitted 'error' event on Connection instance at:
+    at Connection._handleProtocolError (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:426:8)
+    at Protocol.emit (events.js:209:13)
+    at Protocol._delegateError (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:398:10)
+    at Protocol.end (/home/smiah008/lab3/node_modules/mysql/lib/protocol/Protocol.js:116:8)
+    at Socket.<anonymous> (/home/smiah008/lab3/node_modules/mysql/lib/Connection.js:97:28)
+    [... lines matching original stack trace ...]
+    at processTicksAndRejections (internal/process/task_queues.js:80:21) {
+  fatal: true,
+  code: 'PROTOCOL_CONNECTION_LOST'
+}

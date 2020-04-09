@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Update Recipe</title>
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Exo+2&family=Fredoka+One&display=swap" rel="stylesheet">
+      <link href="/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+      <h1>Recipe Bank</h1>
+      <div class="links">
+          <a href='./'>Home</a>&nbsp;&nbsp;
+          &nbsp;&nbsp;<a href='/register'>Register</a>
+          &nbsp;&nbsp;<a href='/login'>Login</a>
+          &nbsp;&nbsp;<a href='/addrecipe'>Add Recipes</a>
+          &nbsp;&nbsp;<a href="/recipes">Recipe List</a>
+          &nbsp;&nbsp;<a href='/search'>Search</a>
+          &nbsp;&nbsp;<a >Update</a>
+          &nbsp;&nbsp;<a href='/delete'>Delete</a>
+          &nbsp;&nbsp;<a href='/api'>Api</a>
+          &nbsp;&nbsp;<a href='/logout'>Logout</a>
+      </div>
+      <div class="container">
+          <h2>Update a Recipe</h2>
+          <div class="forms">
+              <h3>Select a recipe you wish to update from the list below</h3>
+              <h4>Note that you can only update your own submitted recipes.</h4>
+              <form method="POST" action="/updateRecipe">
+                  <div class="aRight">
+                      Updatee Recipe: <input list="recipes" name="recipeUpdate" autocomplete="off">
+                          <datalist id="recipes">
+                          <% recipebook.forEach(function(recipe){ %>
+
+                              <option value="<%= recipe.name %>"> <%= recipe.publisher %></option>
+
+                          <% }) %>
+                      </datalist>
+                      <input type="submit" value="Update" />
+                  </div>
+              </form>
+          </div>
+      </div>
+  </body>
+</html>
